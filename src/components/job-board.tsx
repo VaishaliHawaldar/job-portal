@@ -2,7 +2,7 @@
 
 import { useMemo, useState } from "react";
 import { JOBS, JOB_TYPES, type Job, type JobType } from "@/lib/jobs";
-import ApplicationModal from "./ApplicationModal";
+import ApplicationModal from "./application-modal";
 
 export default function JobBoard() {
   const [query, setQuery] = useState("");
