@@ -1,5 +1,5 @@
 import { describe, it, expect } from "vitest";
-import { getJob } from "./jobs";
+import { getJob } from "@/lib/jobs";
 
 // Pure-logic unit test: no DOM, no React — just a function and its output.
 // This is the fastest, most stable kind of test. Push logic into functions
