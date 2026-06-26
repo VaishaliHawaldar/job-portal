@@ -38,3 +38,9 @@ jobs:
 
       - name: Build Project
         run: npm run build
+
+      - name: Upload Build Artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: next-build
+          path: .next
