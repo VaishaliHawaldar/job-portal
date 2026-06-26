@@ -36,6 +36,12 @@ jobs:
       - name: Build Project
         run: npm run build
 
+      - name: List Files
+        run: |
+            pwd
+            ls -la
+            find . -maxdepth 2   
+
       - name: Upload Build Artifact
         uses: actions/upload-artifact@v4
         with:
