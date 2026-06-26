@@ -5,6 +5,10 @@ on:
     branches:
       - main
 
+  pull_request:
+    branches:
+      - main
+
 jobs:
   build:
 
@@ -22,6 +26,15 @@ jobs:
 
       - name: Install Packages
         run: npm install
+
+      - name: Lint Code
+        run: npm run lint
+
+      - name: Run Unit Tests
+        run: npm test
+
+      - name: Build Project
+        run: npm run build
 
       - name: Build Project
         run: npm run build

@@ -1,7 +1,7 @@
 import { describe, it, expect } from "vitest";
 import { render, screen } from "@testing-library/react";
 import userEvent from "@testing-library/user-event";
-import JobBoard from "./job-board";
+import JobBoard from "@/components/job-board";
 
 // Component test: render the component, then assert on what a USER would see
 // (accessible roles/text), not on internal state. That keeps the test valid
